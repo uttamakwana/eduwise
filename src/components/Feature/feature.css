@@ -21,7 +21,7 @@
   content: "";
   width: 150px;
   height: 150px;
-  background-color: #272cb3;
+  background-color: var(--thirty-pr-color);
   opacity: 0.5;
 }
 
@@ -35,7 +35,9 @@
   content: "";
   width: 150px;
   height: 150px;
-  background-color: #272cb3;
+  background-color: var(--thirty-pr-color);
+  
+
   opacity: 0.5;
 }
 
@@ -51,7 +53,7 @@
 .feature-card .card {
   padding: 30px 30px;
   text-align: center;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--sixty-pr-color);
   width: 230px;
   /* box-shadow: 2px 2px 15px rgb(217, 216, 216); */
   border-radius: 10px;
@@ -61,13 +63,10 @@
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .feature-card .card:hover {
-  background-color: #f3f0eced;
+  background-color: var(--sixty-pr-color);
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
-.feature-card .card svg {
-  width: 50px;
-  height: 50px;
-}
-.feature-card .card:nth-child(1) svg {
+/* .feature-card .card:nth-child(1) svg {
   background-color: #5b72ee;
   padding: 15px 5px;
   border-radius: 5px;
@@ -80,16 +79,16 @@
 .feature-card .card:nth-child(3) svg {
   background-color: #29b9e7;
   padding: 15px 10px;
-  border-radius: 5px;
-}
+  border-radius: 5px; */
+
 .feature-card .card h4 {
-  color: #2f327d;
+  color: var(--thirty-pr-color);
   font-weight: 600;
   font-size: 20px;
   margin-top: 0.5rem;
 }
 .feature-card .card p {
-  color: #6b7280;
+  color: var(--thirty-pr-color);
   margin-top: 0.5rem;
 }
 
@@ -108,7 +107,15 @@
   border-radius: 20px;
   font-size: 15px;
   cursor: pointer;
-  background-color: #f48c06;
-  color: #fff;
+  background-color: var(--ten-pr-color);
+  color: var(--sixty-pr-color);
+}
+
+.heading h4{
+  color: var(--thirty-pr-color);
+}
+
+.heading h4 span{
+  color: var(--ten-pr-color);
 }
 
