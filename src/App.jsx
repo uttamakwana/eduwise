@@ -7,16 +7,16 @@ function App() {
   const [theme, setTheme] = useState("light");
   useEffect(() => {
     if (theme === "light") {
-      document.documentElement.style.setProperty("--sixty-pr-color", "#fff2e1");
+      document.documentElement.style.setProperty("--sixty-pr-color", "#f1f1f1");
       document.documentElement.style.setProperty(
         "--thirty-pr-color",
-        "#2b4560"
+        "#2F327D"
       );
-      document.documentElement.style.setProperty("--ten-pr-color", "#2f6d80");
+      document.documentElement.style.setProperty("--ten-pr-color", "#545AE7");
     } else {
-      document.documentElement.style.setProperty("--sixty-pr-color", "#000");
-      document.documentElement.style.setProperty("--thirty-pr-color", "#fff");
-      document.documentElement.style.setProperty("--ten-pr-color", "#8E05C2");
+      document.documentElement.style.setProperty("--sixty-pr-color", "#2C1F4A");
+      document.documentElement.style.setProperty("--thirty-pr-color", "#F1F1F1");
+      document.documentElement.style.setProperty("--ten-pr-color", "#545AE7");
     }
   });
 
