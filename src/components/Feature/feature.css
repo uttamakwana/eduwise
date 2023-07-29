@@ -1,0 +1,114 @@
+.heading {
+  font-family: "Rubik", sans-serif;
+}
+
+.feature {
+  position: relative;
+  padding: 3rem 0;
+  border-radius: 10%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%
+}
+
+
+.feature::after {
+  bottom: 0%;
+  right: 10%;
+  transform: translate(-20%, -20%);
+  border-radius: 50%;
+  z-index: -20;
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #272cb3;
+  opacity: 0.5;
+}
+
+.feature::before {
+  top: 10%;
+  left: 5%;
+  transform: translate(-20%, -20%);
+  border-radius: 50%;
+  z-index: -20;
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #272cb3;
+  opacity: 0.5;
+}
+
+.feature .feature-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0px 30px;
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+.feature-card .card {
+  padding: 30px 30px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  width: 230px;
+  /* box-shadow: 2px 2px 15px rgb(217, 216, 216); */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.feature-card .card:hover {
+  background-color: #f3f0eced;
+}
+.feature-card .card svg {
+  width: 50px;
+  height: 50px;
+}
+.feature-card .card:nth-child(1) svg {
+  background-color: #5b72ee;
+  padding: 15px 5px;
+  border-radius: 5px;
+}
+.feature-card .card:nth-child(2) svg {
+  background-color: #f48c06;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.feature-card .card:nth-child(3) svg {
+  background-color: #29b9e7;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.feature-card .card h4 {
+  color: #2f327d;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+.feature-card .card p {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.feature-card .card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.feature-card .card button {
+  margin-top: 0.5rem;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f48c06;
+  color: #fff;
+}
+

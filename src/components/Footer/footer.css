@@ -1,0 +1,142 @@
+
+footer{
+    background-color: #252641;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: "Rubik", "Source Sans Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+}
+footer .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .logo .square{
+    width: 30px;
+    position: absolute;
+    height: 30px;
+    border: 1px solid #23bdee;
+    border-radius: 5px;
+    transform: rotate(45deg);
+}
+footer .logo h4{
+    position: relative;
+    top: 0;
+    color: #fff;
+    left: 20px;
+}
+.v-line{
+    width: 1px;
+    height: 60px;
+    background-color: #9ca3af;
+    margin-left: 1.5rem;
+}
+footer .edu-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.edu-logo span{
+    /* width: 100px; */
+    color: #fff;
+    font-size: 15px;
+}
+
+.subscribe-letter{
+    margin-top: 1rem;
+}
+
+footer .subscribe-letter h5{
+    color: rgb(209,213,219);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+footer .subscribe-letter input{
+    border: 1px solid #9ca3af;
+    background-color: transparent;
+    padding: 8px 20px;
+    border-radius: 5px;
+    width: 180px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+footer .subscribe-letter button{
+    background: linear-gradient(105.5deg, rgb(84, 90, 231) 19.57%, rgb(57, 63, 207) 78.85%);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .links a{
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 13px;
+    padding:0px 10px;
+}
+footer .links a:nth-child(1),footer .links a:nth-child(2){
+    border-right: 1px solid #9ca3af;
+}
+footer .copyright p{
+    color: #9ca3af;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+.footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-logo);
+    font-weight: 900;
+    letter-spacing: 0;
+    font-size: 2rem;
+  }
+  .footer .logo .square {
+    background-color: #23bdee;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: stretch ease-in 1.5s infinite;
+  }
+  
+  @keyframes stretch {
+    0% {
+      width: 40px;
+      transform: rotate(45deg);
+    }
+    50% {
+      width: 50px;
+      border-radius: 50%;
+      transform: rotate(70deg);
+    }
+    75% {
+      width: 40px;
+      transform: rotate(180deg);
+    }
+    100% {
+      width: 50px;
+      border-radius: 0%;
+      transform: rotate(45deg);
+    }
+  }
+  .footer .logo h4 {
+    position: relative;
+    margin-left: 8px;
+    letter-spacing: 2px;
+  }
+
+  .subscribe-letter h5 span{
+    color: orange;
+  }

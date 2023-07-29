@@ -1,0 +1,413 @@
+.intro .container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.intro .container .instructor {
+  background-image: url("https://mhaecal.github.io/frontend/img/Rectangle%2019.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  width: 420px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro .container .student {
+  background-image: url("https://mhaecal.github.io/frontend/img/Rectangle%2021.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  width: 420px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro .platform h4 {
+  color: #fff;
+}
+.intro .instructor button {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.intro .student button {
+  border: none;
+  background-color: rgba(35, 189, 238, 0.9);
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+.intro button:hover {
+  transform: scale(1.1, 1.1);
+}
+.mt-6 {
+  margin-top: 6rem;
+}
+.intro .container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.intro .container .instructor {
+  background-image: url("https://mhaecal.github.io/frontend/img/Rectangle%2019.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  width: 420px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro .container .student {
+  background-image: url("https://mhaecal.github.io/frontend/img/Rectangle%2021.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+  width: 420px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro .platform h4 {
+  color: #fff;
+}
+.intro .instructor button {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.intro .student button {
+  border: none;
+  background-color: rgba(35, 189, 238, 0.9);
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+.intro button:hover {
+  transform: scale(1.1, 1.1);
+}
+.mt-6 {
+  margin-top: 6rem;
+}
+.everything .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+.everything .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+.everything .orange-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f48c06;
+  position: absolute;
+  z-index: -1;
+  top: -13px;
+  left: -15px;
+  animation: flicker 2s infinite ease-in-out;
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.everything .content h4 {
+  font-size: 22px;
+  color: #2f327d;
+  font-weight: 600;
+}
+.everything .content span {
+  color: #f48c06;
+}
+.everything .content p {
+  color: #6b7280;
+}
+.everything .content a {
+  color: #6b7280;
+}
+.everything .img {
+  position: relative;
+  z-index: 1;
+}
+.everything .img img {
+  width: 400px;
+}
+.everything .blue {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 100px;
+  height: 100px;
+  background-color: #23bdee;
+  border-radius: 10px;
+  z-index: -1;
+  animation: floating 3s infinite ease-in-out;
+}
+.everything .orange {
+  width: 150px;
+  height: 150px;
+  background-color: #f48c06;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+  right: -15px;
+  z-index: -2;
+  animation: floating 3s infinite ease-in-out;
+}
+.everything .img .play {
+  position: absolute;
+  top: 38%;
+  left: 45%;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+mb-5 {
+  margin-bottom: 5rem;
+}
+.user-interface .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  margin-top: 9rem;
+}
+.user-interface .main .img {
+  position: relative;
+}
+.user-interface .main .img img {
+  width: 500px;
+  animation: floating 3s infinite ease-in-out;
+}
+.user-interface .green,
+.user-interface .blue {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+}
+.user-interface .green {
+  background-color: #33efa0;
+  top: -15%;
+  z-index: -1;
+  left: 5%;
+  animation: flicker 2s infinite ease-in-out;
+}
+.user-interface .blue {
+  background-color: #5b72ee;
+  bottom: 0px;
+  z-index: -1;
+  right: 20%;
+  animation: flicker 2s infinite ease-in-out;
+}
+.user-interface .content {
+  width: 40%;
+}
+.user-interface .content h4 {
+  color: #2f327d;
+  font-size: 22px;
+  font-weight: 600;
+}
+.user-interface .content span {
+  color: #f48c06;
+}
+.user-interface .content .list li {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.user-interface .list p {
+  color: #6b7280;
+}
+.user-interface .content .list svg {
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0px 15px;
+  box-shadow: 0px 3px 4px #aaa;
+}
+.user-interface .list svg:nth-child(2),
+.user-interface .list svg:nth-child(2) {
+  padding: 0px 5px;
+}
+
+.tool .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 30px;
+}
+.content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.content h4 {
+  font-weight: 600;
+  color: #2f327d;
+  font-size: 30px;
+}
+.content span {
+  color: #f48c06;
+}
+.content p {
+  color: #6b7280;
+}
+.img img {
+  width: 500px;
+}
+
+.test .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.test .img img {
+  width: 400px;
+}
+
+.management .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.discussion .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.discussion .img img {
+  width: 450px;
+}
+.btn {
+  text-align: center;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.more {
+  border: 1px solid #f48c06;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: #f48c06;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.integration .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.integration .img img {
+  width: 300px;
+}
+small {
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+  font-size: 15px;
+}
+.line {
+  width: 60px;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin-right: 1.3rem;
+}
+.integration h4 {
+  line-height: 2.5rem;
+}
+.integration .content button {
+  border: 1px solid #f48c06;
+  color: #f48c06;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 10px 10px;
+  width: 200px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.testimonial .main {
+  display: flex;
+  justify-content: space-around;
+}
+.testimonial .img img {
+  width: 400px;
+}
+.testimonial .content button {
+  border: 1px solid #f48c06;
+  color: #f48c06;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 10px 10px;
+  width: 270px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.testimonial button i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.content button:hover {
+  transform: scale(1.1, 1.1);
+}
