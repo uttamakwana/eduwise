@@ -1,32 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
-import {
-  Header,
-  Hero,
-  Partner,
-  Feature,
-  Other,
-  Blog,
-  Footer,
-  WhyEduWise,
-} from "../../components";
+import { Header, Hero, Feature, WhyEduWise, Footer } from "../../components";
 
 const Home = () => {
+  // to toggle the mobile menu when screen goes for mobiles screens
   const [toggle, setToggle] = useState(false);
+  // to go in the top when clicked a top button
   const [showToTop, setShowToTop] = useState(false);
 
+  // this function will handle the top button click event
   const handleToTop = () => {
     console.log("first");
     window.scrollTo(0, 0);
   };
 
+  // this function will handle the scroll position. It means move to top button will be visible after 300 position
   const handleScroll = () => {
     const scrolled = window.scrollY;
     // Adjust the value (300 in this case) to control when the icon becomes visible
     setShowToTop(scrolled > 300);
   };
 
+  // useEffect will handle the scroll event and call handleScroll function
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -35,17 +30,19 @@ const Home = () => {
   }, []);
   return (
     <motion.main initial={{ x: -1000 }} animate={{ x: 0 }}>
-      <Header
-        toggle={toggle}
-        setToggle={setToggle}
-      />
+      {/* Header Component */}
+      <Header toggle={toggle} setToggle={setToggle} />
+      {/* Hero Component */}
       <Hero />
-      {/* <Partner /> */}
+      {/* Feature Component */}
       <Feature />
-      {/* <Other /> */}
-      {/* <Blog /> */}
+      {/* WhyEduWise Component */}
       <WhyEduWise />
+      {/* Footer Component */}
       <Footer />
+      {/* Button to scroll to top 
+          showToTop state will toggle the visiblility of button
+      */}
       <div
         id="top"
         onClick={handleToTop}
