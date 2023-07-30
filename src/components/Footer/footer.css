@@ -10,24 +10,14 @@ footer {
   border-top-left-radius: 25%;
   padding-top: 3rem;
 }
-footer .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-footer .logo h4 {
-  position: relative;
-  top: 0;
-  color: var(--sixty-pr-color);
-  left: 20px;
-}
 .v-line {
   width: 1px;
   height: 60px;
   background-color: var(--sixty-pr-color);
   margin-left: 1.5rem;
 }
+
 footer .edu-logo {
   display: flex;
   justify-content: center;
@@ -35,7 +25,6 @@ footer .edu-logo {
   gap: 1rem;
 }
 .edu-logo span {
-  /* width: 100px; */
   color: var(--sixty-pr-color);
   font-size: 15px;
 }
@@ -50,7 +39,7 @@ footer .subscribe-letter h5 {
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-footer .subscribe-letter input {
+#footer-search {
   border: 1px solid var(--sixty-pr-color);
   background-color: transparent;
   padding: 8px 20px;
