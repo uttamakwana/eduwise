@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
 
-const Header = ({ setToggle, toggle, location, theme, setTheme }) => {
+const Header = ({ setToggle, toggle, location }) => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
 
@@ -87,18 +87,6 @@ const Header = ({ setToggle, toggle, location, theme, setTheme }) => {
               <a href="#">About Us</a>
             </li>
           )}
-          <button
-            className="signup"
-            onClick={() => {
-              if (theme === "light") {
-                setTheme("dark");
-              } else {
-                setTheme("light");
-              }
-            }}
-          >
-            Dark Mode
-          </button>
         </ul>
         <div
           className={`hamburger ${toggle ? "active" : ""}`}

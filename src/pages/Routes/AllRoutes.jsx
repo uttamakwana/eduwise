@@ -13,20 +13,17 @@ const AllRoutes = ({ theme, setTheme }) => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         {/* Home Route */}
-        <Route path="/" element={<Home theme={theme} setTheme={setTheme} />} />
-        {/* Content Route */}
+        <Route path="/" element={<Home />} />
+        {/* Content Route
+          provided setSelected function to select a particular subject card
+        */}
         <Route
           path="/content"
-          element={
-            <Content
-              setTheme={setTheme}
-              theme={theme}
-              selectedCard={selectedCard}
-              setSelectedCard={setSelectedCard}
-            />
-          }
+          element={<Content setSelectedCard={setSelectedCard} />}
         />
-        {/* Subject Route */}
+        {/* Subject Route
+          passing a selected card to display that card in subject route component
+        */}
         <Route
           path="/subject"
           element={<Subject selectedCard={selectedCard} />}

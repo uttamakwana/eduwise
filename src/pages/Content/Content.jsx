@@ -4,7 +4,7 @@ import { Header, Subject } from "../../components";
 import { motion } from "framer-motion";
 import "./content.css";
 import images from "../../constants/images";
-const Content = ({ theme, setTheme, setSelectedCard, selectedCard }) => {
+const Content = ({ setSelectedCard }) => {
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
 
@@ -103,8 +103,6 @@ const Content = ({ theme, setTheme, setSelectedCard, selectedCard }) => {
         toggle={toggle}
         setToggle={setToggle}
         location={locationValue}
-        setTheme={setTheme}
-        theme={theme}
       />
       <section className="filter">
         {/* <h1>Subjects</h1> */}

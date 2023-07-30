@@ -12,7 +12,7 @@ import {
   WhyEduWise,
 } from "../../components";
 
-const Home = ({ setTheme, theme }) => {
+const Home = () => {
   const [toggle, setToggle] = useState(false);
   const [showToTop, setShowToTop] = useState(false);
 
@@ -38,8 +38,6 @@ const Home = ({ setTheme, theme }) => {
       <Header
         toggle={toggle}
         setToggle={setToggle}
-        theme={theme}
-        setTheme={setTheme}
       />
       <Hero />
       {/* <Partner /> */}
