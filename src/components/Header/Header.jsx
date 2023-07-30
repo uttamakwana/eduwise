@@ -44,7 +44,9 @@ const Header = ({ setToggle, toggle, location, theme, setTheme }) => {
       <nav className="navbar bg-cream">
         <div className="logo">
           <div className="square"></div>
-          <h4>EduWise</h4>
+          <Link to="/">
+            <h4>EduWise</h4>
+          </Link>
         </div>
         <ul
           className={`nav-list ${toggle ? "active" : ""} ${

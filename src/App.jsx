@@ -16,13 +16,9 @@ function App() {
       document.documentElement.style.setProperty("--shade", "#d7dcf8");
     } else {
       document.documentElement.style.setProperty("--sixty-pr-color", "#2C1F4A");
-      document.documentElement.style.setProperty(
-        "--thirty-pr-color",
-        "#fff"
-        );
-        document.documentElement.style.setProperty("--ten-pr-color", "#DBC4F0");
-        document.documentElement.style.setProperty("--shade", "#3a2b5c");
-
+      document.documentElement.style.setProperty("--thirty-pr-color", "#fff");
+      document.documentElement.style.setProperty("--ten-pr-color", "#DBC4F0");
+      document.documentElement.style.setProperty("--shade", "#3a2b5c");
     }
   });
 
@@ -31,6 +27,7 @@ function App() {
       <BrowserRouter>
         <AllRoutes theme={theme} setTheme={setTheme} />
       </BrowserRouter>
+      {/* <div id="top" onClick={handleToTop} className={`${isVisible ? "visible" : "invisible"}`}> */}
     </div>
   );
 }

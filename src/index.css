@@ -43,6 +43,11 @@ font-family: 'Wix Madefor Text', sans-serif;
   background-color: var(--shade);
 }
 
+a{
+  text-decoration: none;
+  color: var(--thirty-pr-color);
+}
+
 body{
   background-color: var(--sixty-pr-color);
 }
@@ -286,4 +291,18 @@ body{
   .hero .main {
     padding: 10px 30px;
   }
+}
+
+#top{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.top.invisible{
+  display: none;
+}
+
+.top.visible{
+  display: block;
 }

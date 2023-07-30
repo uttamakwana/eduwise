@@ -4,14 +4,14 @@ import images from "../../constants/images.js";
 
 const WhyEduWise = () => {
   return (
-    <div class="why-eduwise-container">
-      <h2 class="why-eduwise-heading">
+    <div className="why-eduwise-container">
+      <h2 className="why-eduwise-heading">
         Why <span> EduWise?</span>
       </h2>
-      <div class="why-eduwise-container-content">
-        <div class="why-eduwise-container-side">
-          <div class="why-eduwise-container-leftside-top why-eduwise-shadow">
-            <div class="why-eduwise-container-top">
+      <div className="why-eduwise-container-content">
+        <div className="why-eduwise-container-side">
+          <div className="why-eduwise-container-leftside-top why-eduwise-shadow">
+            <div className="why-eduwise-container-top">
               <img
                 width="48"
                 height="48"
@@ -27,8 +27,8 @@ const WhyEduWise = () => {
               </p>
             </div>
           </div>
-          <div class="why-eduwise-container-leftside-bottom why-eduwise-shadow">
-            <div class="why-eduwise-container-top">
+          <div className="why-eduwise-container-leftside-bottom why-eduwise-shadow">
+            <div className="why-eduwise-container-top">
               <img
                 width="35"
                 height="35"
@@ -45,12 +45,12 @@ const WhyEduWise = () => {
             </div>
           </div>
         </div>
-        <div class="why-eduwise-container-centerimage">
+        <div className="why-eduwise-container-centerimage">
           <img src={images.kid} alt="kid-studing-in-eduwise" />
         </div>
-        <div class="why-eduwise-container-side">
-          <div class="why-eduwise-container-rightside-top why-eduwise-shadow">
-            <div class="why-eduwise-container-top">
+        <div className="why-eduwise-container-side">
+          <div className="why-eduwise-container-rightside-top why-eduwise-shadow">
+            <div className="why-eduwise-container-top">
               <img
                 width="48"
                 height="48"
@@ -66,8 +66,8 @@ const WhyEduWise = () => {
               </p>
             </div>
           </div>
-          <div class="why-eduwise-container-rightside-bottom why-eduwise-shadow">
-            <div class="why-eduwise-container-top">
+          <div className="why-eduwise-container-rightside-bottom why-eduwise-shadow">
+            <div className="why-eduwise-container-top">
               <img
                 width="45"
                 height="45"
