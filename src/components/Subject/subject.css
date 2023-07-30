@@ -1,18 +1,18 @@
-.container {
+.subject-container-component .container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-top: 3rem;
 }
 
-.container h1 {
+.subject-container-component .container h1 {
   text-align: center;
   font-family: "Quicksand", "Poppins", sans-serif;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 1rem;
 }
 
-.container .container-display {
+.subject-container-component .container .container-display {
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: 1px solid var(--sixty-pr-color);
