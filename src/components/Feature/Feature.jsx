@@ -3,6 +3,7 @@ import "./feature.css";
 import images from "../../constants/images";
 
 const Feature = () => {
+  // cardArray for Popular Subject Section
   const cardArray = [
     {
       img: images.girlwithlaptop,
@@ -30,6 +31,7 @@ const Feature = () => {
       description: "Analysis and Design of Algorithm",
     },
   ];
+  // departmentArray for All Department Section
   const departmentArray = [
     {
       img: images.girlwithlaptop,
@@ -60,6 +62,7 @@ const Feature = () => {
         </p>
       </div>
       <div className="feature-card">
+        {/* Mapping in Popular Subject */}
         {cardArray.map((card) => {
           return (
             <div className="card" key={Math.floor(Math.random() * 100)}>
@@ -83,6 +86,7 @@ const Feature = () => {
         </p>
       </div>
       <div className="feature-card">
+        {/* Mapping in All Department */}
         {departmentArray.map((card) => {
           return (
             <div className="card" key={Math.floor(Math.random() * 100)}>

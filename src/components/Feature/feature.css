@@ -10,7 +10,6 @@
   border-top-right-radius: 5%
 }
 
-
 .feature::after {
   bottom: 0%;
   right: 10%;
@@ -22,7 +21,6 @@
   width: 150px;
   height: 150px;
   background-color: var(--thirty-pr-color);
-  /* opacity: 0.5; */
 }
 
 .feature::before {
@@ -36,9 +34,6 @@
   width: 150px;
   height: 150px;
   background-color: var(--thirty-pr-color);
-  
-
-  /* opacity: 0.5; */
 }
 
 .feature .feature-card {
@@ -50,12 +45,12 @@
   margin-top: 2rem;
   font-family: "Poppins", sans-serif;
 }
+
 .feature-card .card {
   padding: 30px 30px;
   text-align: center;
   border: 1px solid var(--sixty-pr-color);
   width: 230px;
-  /* box-shadow: 2px 2px 15px rgb(217, 216, 216); */
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -66,20 +61,6 @@
   background-color: var(--sixty-pr-color);
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
-/* .feature-card .card:nth-child(1) svg {
-  background-color: #5b72ee;
-  padding: 15px 5px;
-  border-radius: 5px;
-}
-.feature-card .card:nth-child(2) svg {
-  background-color: #f48c06;
-  padding: 15px 10px;
-  border-radius: 5px;
-}
-.feature-card .card:nth-child(3) svg {
-  background-color: #29b9e7;
-  padding: 15px 10px;
-  border-radius: 5px; */
 
 .feature-card .card h4 {
   color: var(--thirty-pr-color);
