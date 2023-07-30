@@ -40,6 +40,10 @@ font-family: 'Wix Madefor Text', sans-serif;
   scroll-behavior: smooth;
 }
 .bg-cream {
+  background-color: var(--shade);
+}
+
+body{
   background-color: var(--sixty-pr-color);
 }
 
@@ -221,6 +225,44 @@ font-family: 'Wix Madefor Text', sans-serif;
     width: 100%;
     /* align-self: center; */
   }
+
+  .filter-list{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .filter-list-group {
+    width: 70%;
+  }
+
+  .filter-list-group select{
+    display: block;
+    width: 100%;
+    padding: 1rem 0.7rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* padding: 2rem; */
+    border-radius: 5px;
+  }
+
+  .filter-list-group::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 25px;
+    background: var(--thirty-pr-color);
+    color: var(--sixty-pr-color);
+    padding: 11px 15px;
+    pointer-events: none;
+    border-radius: 5px;
+}
+.filter-list-group {
+    position: relative;
+}
 }
 @media only screen and (max-width: 420px) {
   .blog-container .blog-post .post h4 {

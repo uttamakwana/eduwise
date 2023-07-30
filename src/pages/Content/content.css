@@ -14,6 +14,10 @@
   justify-content: space-around;
 }
 
+.filter-list-group{
+  width: 25%;
+}
+
 .filter-list-group select {
   padding: 0.75rem 0.5rem;
   font-family: "Poppins", sans-serif;
@@ -23,6 +27,34 @@
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   outline: none;
   border: none;
+}
+
+.filter-list-group select{
+  display: block;
+  width: 100%;
+  padding: 1rem 0.7rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* padding: 2rem; */
+  border-radius: 5px;
+}
+
+.filter-list-group::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 25px;
+  background: var(--thirty-pr-color);
+  color: var(--sixty-pr-color);
+  padding: 11px 15px;
+  pointer-events: none;
+  border-radius: 5px;
+}
+.filter-list-group {
+  position: relative;
 }
 
 .subject-container {
@@ -73,8 +105,8 @@
   border-radius: 5px;
   border: none;
   outline: none;
-  background: #2f327d;
-  color: white;
+  background: var(--ten-pr-color);
+  color: var(--sixty-pr-color);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }

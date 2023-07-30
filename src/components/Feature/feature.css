@@ -22,7 +22,7 @@
   width: 150px;
   height: 150px;
   background-color: var(--thirty-pr-color);
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .feature::before {
@@ -38,7 +38,7 @@
   background-color: var(--thirty-pr-color);
   
 
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .feature .feature-card {
