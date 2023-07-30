@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Header } from "../../components";
+import { Header, Subject } from "../../components";
 import { motion } from "framer-motion";
 import "./content.css";
 import images from "../../constants/images";
-const Content = ({ theme, setTheme }) => {
+const Content = ({ theme, setTheme, setSelectedCard, selectedCard }) => {
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
 
@@ -77,6 +77,7 @@ const Content = ({ theme, setTheme }) => {
   ];
 
   const [filterdArray, setFilteredArray] = useState(cardArray);
+  const [explore, setExplore] = useState(false);
 
   // console.log("outside", departmentRef.current.value);
   console.log("outside", department);
@@ -156,7 +157,15 @@ const Content = ({ theme, setTheme }) => {
                 <img src={card.img} alt="none" style={{ display: "block" }} />
                 <strong>{card.title}</strong>
                 <p>{card.code}</p>
-                <button>Explore</button>
+                <button
+                  onClick={() => {
+                    setExplore(true);
+                    navigate("/subject");
+                    setSelectedCard(card);
+                  }}
+                >
+                  Explore
+                </button>
               </div>
             );
           })}
