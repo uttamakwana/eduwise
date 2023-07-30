@@ -43,6 +43,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .why-eduwise-container-centerimage {
@@ -102,7 +103,7 @@
 }
 
 .why-eduwise-shadow {
-  padding: 0.5rem 1rem;
+  padding: 1.2rem 1rem;
   margin: 0.5rem 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all ease-in 0.5s;

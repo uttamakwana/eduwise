@@ -32,7 +32,7 @@ const Hero = () => {
           </form>
         </div>
         <div className="img">
-          <img src={images.girl} alt="none" />
+          <img src={images.boy} alt="none" />
         </div>
       </div>
     </section>

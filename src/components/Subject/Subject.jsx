@@ -18,14 +18,40 @@ const Subject = ({ selectedCard }) => {
         <h1>{selectedCard.title}</h1>
         <main className="container-display">
           <section>
-            <button onClick={() => setShowContent("Syllabus")}>Syllabus</button>
-            <button onClick={() => setShowContent("PYQs")}>PYQs</button>
-            <button onClick={() => setShowContent("IMPQ")}>IMP Question</button>
-            <button onClick={() => setShowContent("HWN")}>
-              Handwritten Notes
+            <button>
+              <a
+                href="https://drive.google.com/file/d/1VgK7KBKIT5Xn4yusP1MybUODmEbmwQO6/view?usp=drivesdk"
+                target="_blank"
+              >
+                Handwritten Notes
+              </a>
+            </button>
+            <button>
+              <a
+                href="https://drive.google.com/file/d/1Vhxbn9Kxy1KZ4dcJ0pmTvw5TJQm9AXXP/view?usp=drivesdk"
+                target="_blank"
+              >
+                IMP Questions
+              </a>
+            </button>
+            <button>
+              <a
+                href="https://drive.google.com/file/d/1VgnTiap2EAldhwcvIY0VmlSVYqyTvbzA/view?usp=drivesdk"
+                target="_blank"
+              >
+                Syllabus
+              </a>
+            </button>
+            <button>
+              <a
+                href="https://drive.google.com/file/d/1Vhxbn9Kxy1KZ4dcJ0pmTvw5TJQm9AXXP/view?usp=drivesdk"
+                target="_blank"
+              >
+                PYQs
+              </a>
             </button>
           </section>
-          <div className="show-content">
+          {/* <div className="show-content">
             {showContent === "Syllabus" && (
               <div className="content-card card-syllabus">
                 <div className="left">a</div>
@@ -49,7 +75,7 @@ const Subject = ({ selectedCard }) => {
                 <div className="right"></div>
               </div>
             )}
-          </div>
+          </div> */}
         </main>
       </div>
     </section>

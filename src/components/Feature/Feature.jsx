@@ -6,29 +6,29 @@ const Feature = () => {
   // cardArray for Popular Subject Section
   const cardArray = [
     {
-      img: images.girlwithlaptop,
+      img: images.ADA,
       title: "ADA",
       description: "Analysis and Design of Algorithm",
     },
     {
-      img: images.girl,
-      title: "ADA",
-      description: "Analysis and Design of Algorithm",
+      img: images.WT,
+      title: "WT",
+      description: "Web Technology",
     },
     {
-      img: images.girlwithlaptop,
-      title: "ADA",
-      description: "Analysis and Design of Algorithm",
+      img: images.CN,
+      title: "CN",
+      description: "Web Development",
     },
     {
-      img: images.girlwithlaptop,
-      title: "ADA",
-      description: "Analysis and Design of Algorithm",
+      img: images.AWP,
+      title: "AWP",
+      description: "Advanced Web Programming",
     },
     {
-      img: images.girlwithlaptop,
-      title: "ADA",
-      description: "Analysis and Design of Algorithm",
+      img: images.SC,
+      title: "SC",
+      description: "Satellite Communication",
     },
   ];
   // departmentArray for All Department Section
@@ -47,7 +47,7 @@ const Feature = () => {
     },
     {
       img: images.girlwithlaptop,
-      title: "Mechanical",
+      title: "Mechanical Engineering",
     },
   ];
   return (

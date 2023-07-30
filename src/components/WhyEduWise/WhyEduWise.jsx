@@ -58,12 +58,11 @@ const WhyEduWise = () => {
                 src="https://img.icons8.com/emoji/48/crown-emoji.png"
                 alt="crown-emoji"
               />
-              <strong>Effective and Efficient</strong>
+              <strong>Stay Motivated</strong>
             </div>
             <div>
               <p>
-                Our study material effectively and efficient teach reading and
-                learning. Check more courses.
+                Stay motivated in education. Knowledge is power, unlocking opportunities and your full potential.
               </p>
             </div>
           </div>

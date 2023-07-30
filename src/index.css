@@ -1,31 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-/* 
-Instrument Sans
-Merriweather
-Nunito
-Poppins
-Quicksand
-Rubik
-Source Code Pro
-Wix Mandefor Text
-
-font-family: 'Instrument Sans', sans-serif;
-font-family: 'Merriweather', serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Source Code Pro', monospace;
-font-family: 'Wix Madefor Text', sans-serif;
-*/
-
 #root {
-  --color-red: #d2001a;
-  --color-yellow: #ffde00;
-  --color-green: #7a9d54;
-  --color-blue: #1d5d9b;
-  --color-violet: #8062d6;
   --font-logo: "Nunito", sans-serif;
   --font-list-item: "Poppins", sans-serif;
   --font-hero: "Instrument Sans", sans-serif;
@@ -43,12 +18,12 @@ font-family: 'Wix Madefor Text', sans-serif;
   background-color: var(--shade);
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--thirty-pr-color);
 }
 
-body{
+body {
   background-color: var(--sixty-pr-color);
 }
 
@@ -89,9 +64,11 @@ body{
     top: 100%;
     scale: 1;
     opacity: 1;
-    height: 325%;
+    height: 275%;
     background-color: var(--sixty-pr-color);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   .nav-list.small-height {
@@ -231,7 +208,7 @@ body{
     /* align-self: center; */
   }
 
-  .filter-list{
+  .filter-list {
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -241,7 +218,7 @@ body{
     width: 70%;
   }
 
-  .filter-list-group select{
+  .filter-list-group select {
     display: block;
     width: 100%;
     padding: 1rem 0.7rem;
@@ -253,7 +230,7 @@ body{
   }
 
   .filter-list-group::after {
-    content: '\25BC';
+    content: "\25BC";
     position: absolute;
     top: 0;
     right: 0;
@@ -264,10 +241,10 @@ body{
     padding: 11px 15px;
     pointer-events: none;
     border-radius: 5px;
-}
-.filter-list-group {
+  }
+  .filter-list-group {
     position: relative;
-}
+  }
 }
 @media only screen and (max-width: 420px) {
   .blog-container .blog-post .post h4 {
@@ -278,6 +255,11 @@ body{
 @media only screen and (max-width: 677px) {
   .blog-container .blog-post img {
     width: 100% !important;
+  }
+
+  .nav-list.active{
+    padding: 0;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 380px) {
@@ -293,16 +275,16 @@ body{
   }
 }
 
-#top{
+#top {
   position: fixed;
   bottom: 5%;
   right: 5%;
 }
 
-.top.invisible{
+.top.invisible {
   display: none;
 }
 
-.top.visible{
+.top.visible {
   display: block;
 }

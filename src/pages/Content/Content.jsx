@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Header, Subject } from "../../components";
+import { Header } from "../../components";
 import { motion } from "framer-motion";
 import "./content.css";
 import images from "../../constants/images";
@@ -19,58 +19,80 @@ const Content = ({ setSelectedCard }) => {
 
   const cardArray = [
     {
-      img: images.airbnb,
-      title: "Anyalysis and Design of Algorithm",
+      img: images.ADA,
+      title: "Analysis and Design of Algorithm",
       code: "3150709",
       department: "Information Technology",
       semester: "5",
     },
     {
-      img: images.google,
+      img: images.WT,
       title: "Web Technology",
       code: "2160708",
       department: "Computer Engineering",
       semester: "6",
     },
     {
-      img: images.amazon,
+      img: images.TOC,
       title: "Theory of Computation",
       code: "2160704",
       department: "Computer Engineeing",
       semester: "6",
     },
     {
-      img: images.airbnb,
+      img: images.AWP,
       title: "Advanced Web Programming",
       code: "3161611",
       department: "Information Technology",
       semester: "6",
     },
     {
-      img: images.airbnb,
+      img: images.OOP,
       title: "OOP",
       code: "2140705",
       department: "Computer Engineering",
       semester: "6",
     },
     {
-      img: images.airbnb,
+      img: images.OS,
       title: "Operating System",
       code: "3154985",
       department: "Information Technology",
       semester: "4",
     },
     {
-      img: images.airbnb,
-      title: "ADA",
-      code: "3150709",
+      img: images.CS,
+      title: "Cyber Security",
+      code: "3150714",
       department: "Information Technology",
+      semester: "5",
+    },
+    {
+      img: images.CN,
+      title: "Computer Network",
+      code: "3150710",
+      department: "Information Technology",
+      semester: "5",
+    },
+    {
+      img: images.SC,
+      title: "Satellite Communication",
+      code: "3154985",
+      department: "Electronics and Communication",
       semester: "6",
     },
     {
-      img: images.airbnb,
-      title: "ADA",
-      code: "3150709",
+      img: images.ET,
+      title: "Engineering Thrmodynamics",
+      code: "3131905",
+      department: "Mechanical Engineering",
+      semester: "3",
+    },
+
+    {
+      img: images.SE,
+      title: "Software Engineering",
+      code: "3150711",
       department: "Information Technology",
       semester: "6",
     },
@@ -99,11 +121,7 @@ const Content = ({ setSelectedCard }) => {
       animate={{ y: 0 }}
       transition={{ duration: 0.7 }}
     >
-      <Header
-        toggle={toggle}
-        setToggle={setToggle}
-        location={locationValue}
-      />
+      <Header toggle={toggle} setToggle={setToggle} location={locationValue} />
       <section className="filter">
         {/* <h1>Subjects</h1> */}
         <h1>Subjects</h1>
