@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from "react";
-import "./header.css";
 import { Link } from "react-router-dom";
+import "./header.css";
 
 const Header = ({ setToggle, toggle, location }) => {
+  // to toggle the visibility of Header
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  // to store the previous value header position
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
 
+  // this useEffect will handle the change in visibility of header
   useEffect(() => {
     let timeoutId;
-
     const handleScroll = () => {
       if (timeoutId) clearTimeout(timeoutId);
-
       const currentScrollPos = window.scrollY;
       const scrollingDown = currentScrollPos > prevScrollPos;
-
       setPrevScrollPos(currentScrollPos);
-
       if (scrollingDown) {
         setIsHeaderVisible(false);
       } else {
@@ -27,8 +26,8 @@ const Header = ({ setToggle, toggle, location }) => {
       }
     };
 
+    // scroll event
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
       if (timeoutId) clearTimeout(timeoutId);
@@ -36,6 +35,7 @@ const Header = ({ setToggle, toggle, location }) => {
   }, [prevScrollPos]);
 
   return (
+    // header component
     <header
       className={`header ${toggle ? "header-not-active" : ""} ${
         isHeaderVisible ? "visible" : "invisible"
