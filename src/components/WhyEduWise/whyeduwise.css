@@ -1,0 +1,115 @@
+/*  */
+.why-eduwise-container {
+  /* width: 70%; */
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  /* display: block; */
+}
+
+.why-eduwise-heading {
+  margin-bottom: 1rem;
+  color: var(--thirty-pr-color);
+}
+
+.why-eduwise-heading span {
+  color: var(--ten-pr-color);
+}
+.why-eduwise-container-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.why-eduwise-container-content strong {
+  font-size: 1.1rem;
+  color: var(--thirty-pr-color);
+}
+
+.why-eduwise-container-content p {
+  font-size: 1rem;
+}
+
+.why-eduwise-container-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.why-eduwise-container-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-eduwise-container-centerimage {
+  width: 40%;
+  /* height: 400px; */
+  /* height: 100%; */
+}
+
+.why-eduwise-container-centerimage img {
+  width: 400px;
+}
+
+@media screen and (max-width: 1125px) {
+  .why-eduwise-container {
+    width: 90%;
+    /* gap: 2rem; */
+  }
+
+  .why-eduwise-container-side {
+    gap: 4rem;
+  }
+
+  .why-eduwise-container-centerimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-eduwise-container-centerimage img {
+    /* max-width: 100%; */
+    /* object-fit: cover; */
+    width: 350px;
+    height: 350px;
+    /* height: 100%; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .why-eduwise-container-centerimage {
+    display: none;
+  }
+
+  .why-eduwise-container-content .why-eduwise-container-side {
+    gap: 2rem;
+  }
+
+  .why-eduwise-container-side {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .why-eduwise-container-content {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.why-eduwise-shadow {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all ease-in 0.5s;
+  border-radius: 2px;
+}
+
+.why-eduwise-shadow:hover {
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

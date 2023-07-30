@@ -5,5 +5,6 @@ import Feature from "./Feature/Feature.jsx";
 import Footer from "./Footer/Footer.jsx";
 import Blog from "./Blog/Blog.jsx";
 import Other from "./Other/Other.jsx";
+import WhyEduWise from "./WhyEduWise/WhyEduWise.jsx";
 
-export { Header, Hero, Partner, Feature, Footer, Blog, Other };
+export { Header, Hero, Partner, Feature, Footer, Blog, Other, WhyEduWise };

@@ -9,6 +9,7 @@ import {
   Other,
   Blog,
   Footer,
+  WhyEduWise
 } from "../../components";
 
 const Home = ({ setTheme, theme }) => {
@@ -26,6 +27,7 @@ const Home = ({ setTheme, theme }) => {
       <Feature />
       {/* <Other /> */}
       {/* <Blog /> */}
+      <WhyEduWise />
       <Footer />
     </motion.main>
   );

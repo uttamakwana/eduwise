@@ -6,6 +6,7 @@ import grab from "../images/grab.svg";
 import girlwithlaptop from "../images/girl-laptop.png";
 import laptopnews from "../images/laptop-news.png";
 import girl from "../images/girl.png"
+import kid from "../images/kid.png";
 
 
 export default {
@@ -16,5 +17,6 @@ export default {
     grab,
     girlwithlaptop,
     laptopnews,
-    girl
+    girl,
+    kid
 }
