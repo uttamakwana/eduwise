@@ -20,7 +20,7 @@
   content: "";
   width: 150px;
   height: 150px;
-  background-color: var(--thirty-pr-color);
+  background-color: var(--shade);
 }
 
 .feature::before {
@@ -33,7 +33,7 @@
   content: "";
   width: 150px;
   height: 150px;
-  background-color: var(--thirty-pr-color);
+  background-color: var(--shade);
 }
 
 .feature .feature-card {
