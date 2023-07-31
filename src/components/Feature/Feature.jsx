@@ -1,8 +1,10 @@
 import React from "react";
 import "./feature.css";
 import images from "../../constants/images";
+import { useNavigate } from "react-router-dom";
 
 const Feature = () => {
+  const navigate = useNavigate();
   // cardArray for Popular Subject Section
   const cardArray = [
     {
@@ -34,19 +36,19 @@ const Feature = () => {
   // departmentArray for All Department Section
   const departmentArray = [
     {
-      img: images.girlwithlaptop,
+      img: images.IT,
       title: "Information Technology",
     },
     {
-      img: images.girl,
+      img: images.CE,
       title: "Computer Engineering",
     },
     {
-      img: images.girlwithlaptop,
+      img: images.EC,
       title: "Electronic Communication",
     },
     {
-      img: images.girlwithlaptop,
+      img: images.ME,
       title: "Mechanical Engineering",
     },
   ];
@@ -69,7 +71,14 @@ const Feature = () => {
               <img src={card.img} alt="none" style={{ display: "block" }} />
               <h4>{card.title}</h4>
               <p>{card.description}</p>
-              <button>Explore</button>
+              <button
+                onClick={() => {
+                  navigate("/content");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Explore
+              </button>
             </div>
           );
         })}
@@ -85,6 +94,7 @@ const Feature = () => {
           tools <br /> needed to run a successful school or office.
         </p>
       </div>
+      
       <div className="feature-card">
         {/* Mapping in All Department */}
         {departmentArray.map((card) => {
@@ -92,7 +102,14 @@ const Feature = () => {
             <div className="card" key={Math.floor(Math.random() * 100)}>
               <img src={card.img} alt="none" style={{ display: "block" }} />
               <h4>{card.title}</h4>
-              <button>Explore</button>
+              <button
+                onClick={() => {
+                  navigate("/content");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Explore
+              </button>
             </div>
           );
         })}
