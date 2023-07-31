@@ -90,8 +90,7 @@ const Feature = () => {
           All <span>Department</span>
         </h4>
         <p>
-          Skilline is one powerful online software suite that combines all the
-          tools <br /> needed to run a successful school or office.
+          EduWise is a powerfull one stop portal that covers <br /> all department of the college.
         </p>
       </div>
       
