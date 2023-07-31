@@ -13,7 +13,7 @@ const AllRoutes = ({ theme, setTheme }) => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         {/* Home Route */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home setSelectedCard={setSelectedCard} />} />
         {/* Content Route
           provided setSelected function to select a particular subject card
         */}

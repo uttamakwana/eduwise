@@ -1,0 +1,72 @@
+.about-us-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.about-us-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--thirty-pr-color);
+}
+.about-us-heading span {
+  color: var(--ten-pr-color);
+}
+
+.about-us-content {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  color: var(--thirty-pr-color);
+  transition: all ease 0.9s;
+}
+
+.about-us-content:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.about-us-content h1 {
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.about-us-content h1 span {
+  color: var(--ten-pr-color);
+}
+
+.about-us-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media only screen and (max-width: 560px) {
+  .about-us-heading {
+    font-size: 2rem;
+  }
+
+  .about-us-content h1 {
+    font-size: 1.5rem;
+  }
+  .about-us-content {
+    padding: 1rem;
+    width: 95%;
+    text-align: center;
+  }
+
+  .about-us-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+  }
+}

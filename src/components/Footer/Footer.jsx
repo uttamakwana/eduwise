@@ -18,8 +18,8 @@ const Footer = () => {
           Contact Us for any kind of <span>query</span>
         </h5>
         <div className="form">
-          <input type="text" id="footer-search" placeholder="Your Email" />
-          <button>Message</button>
+          <input type="text" id="footer-search" placeholder="Your message" />
+          <button>Send</button>
         </div>
       </div>
       <div className="copyright">

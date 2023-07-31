@@ -129,3 +129,15 @@ footer .copyright p {
 #footer-logo {
   color: var(--sixty-pr-color);
 }
+
+#footer-search{
+  color: white;
+}
+
+#footer-search::placeholder{
+  color: var(--sixty-pr-color);
+}
+
+#footer-search:focus{
+  outline: 2px solid var(--sixty-pr-color);
+}

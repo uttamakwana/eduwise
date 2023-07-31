@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Header } from "../../components";
+import { AboutUs, Header } from "../../components";
 import { motion } from "framer-motion";
 import "./content.css";
 import images from "../../constants/images";
@@ -117,9 +117,9 @@ const Content = ({ setSelectedCard }) => {
 
   return (
     <motion.main
-      initial={{ y: -500 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.7 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
     >
       <Header toggle={toggle} setToggle={setToggle} location={locationValue} />
       <section className="filter">
@@ -178,6 +178,7 @@ const Content = ({ setSelectedCard }) => {
                     setExplore(true);
                     navigate("/subject");
                     setSelectedCard(card);
+                    window.scrollTo(0, 0);
                   }}
                 >
                   Explore
@@ -187,6 +188,7 @@ const Content = ({ setSelectedCard }) => {
           })}
         </div>
       </div>
+      <AboutUs />
       {/* <button onClick={() => navigate("/")}>Back to home</button> */}
     </motion.main>
   );

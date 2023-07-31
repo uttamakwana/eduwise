@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../Header/Header.jsx";
 import "./subject.css";
+import AboutUs from "../AboutUs/AboutUs.jsx";
+import { motion } from "framer-motion";
 
 const Subject = ({ selectedCard }) => {
   //   console.log(selectedCard);
@@ -12,7 +14,12 @@ const Subject = ({ selectedCard }) => {
   const [showContent, setShowContent] = useState("Syllabus");
 
   return (
-    <section className="subject-container-component">
+    <motion.section
+      className="subject-container-component"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <Header toggle={toggle} setToggle={setToggle} location={locationValue} />
       <div className="container">
         <h1>{selectedCard.title}</h1>
@@ -78,7 +85,8 @@ const Subject = ({ selectedCard }) => {
           </div> */}
         </main>
       </div>
-    </section>
+      <AboutUs />
+    </motion.section>
   );
 };
 

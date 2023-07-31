@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Header, Hero, Feature, WhyEduWise, Footer } from "../../components";
+import {
+  Header,
+  Hero,
+  Feature,
+  WhyEduWise,
+  Footer,
+  AboutUs,
+} from "../../components";
 
-const Home = () => {
+const Home = ({setSelectedCard}) => {
   // to toggle the mobile menu when screen goes for mobiles screens
   const [toggle, setToggle] = useState(false);
   // to go in the top when clicked a top button
@@ -29,15 +36,21 @@ const Home = () => {
     };
   }, []);
   return (
-    <motion.main initial={{ x: -1000 }} animate={{ x: 0 }}>
+    <motion.main
+      initial={{ x: -1000 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 0.7 }}
+    >
       {/* Header Component */}
       <Header toggle={toggle} setToggle={setToggle} />
       {/* Hero Component */}
-      <Hero />
+      <Hero setSelectedCard={setSelectedCard} />
       {/* Feature Component */}
       <Feature />
       {/* WhyEduWise Component */}
       <WhyEduWise />
+      {/* AboutUs Component */}
+      <AboutUs />
       {/* Footer Component */}
       <Footer />
       {/* Button to scroll to top 

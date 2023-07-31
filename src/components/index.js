@@ -7,6 +7,7 @@ import Blog from "./Blog/Blog.jsx";
 import Other from "./Other/Other.jsx";
 import WhyEduWise from "./WhyEduWise/WhyEduWise.jsx";
 import Subject from "./Subject/Subject.jsx";
+import AboutUs from "./AboutUs/AboutUs.jsx";
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   Other,
   WhyEduWise,
   Subject,
+  AboutUs
 };

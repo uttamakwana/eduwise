@@ -257,7 +257,7 @@ body {
     width: 100% !important;
   }
 
-  .nav-list.active{
+  .nav-list.active {
     padding: 0;
     justify-content: center;
   }
@@ -287,4 +287,30 @@ body {
 
 .top.visible {
   display: block;
+}
+
+*::selection {
+  background-color: #2F327D;
+  color: var(--sixty-pr-color);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--thirty-pr-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--ten-pr-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sixty-pr-color);
 }

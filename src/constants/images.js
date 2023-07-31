@@ -19,6 +19,10 @@ import CS from "../images/CS.png";
 import SC from "../images/SC.png";
 import SE from "../images/SE.png";
 import ET from "../images/ET.png";
+import IT from "../images/IT.png";
+import CE from "../images/CE.png";
+import EC from "../images/EC.png";
+import ME from "../images/ME.png";
 
 export default {
   google,
@@ -42,4 +46,8 @@ export default {
   SC,
   SE,
   ET,
+  IT,
+  CE,
+  EC,
+  ME,
 };

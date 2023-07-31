@@ -40,6 +40,7 @@ const Header = ({ setToggle, toggle, location }) => {
       className={`header ${toggle ? "header-not-active" : ""} ${
         isHeaderVisible ? "visible" : "invisible"
       }`}
+      id="home-header"
     >
       <nav className="navbar bg-cream">
         <div className="logo">
@@ -50,14 +51,25 @@ const Header = ({ setToggle, toggle, location }) => {
         </div>
         <ul
           className={`nav-list ${toggle ? "active" : ""} ${
-            location === "/content" ? "small-height" : ""
+            location === "/content" || location === "/subject"
+              ? "small-height"
+              : ""
           }`}
         >
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <a
+                href="#home-header"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Home
+              </a>
+            </Link>
           </li>
 
-          {location === "/content" ? (
+          {location === "/content" || location === "/subject" ? (
             ""
           ) : (
             <li>
@@ -65,12 +77,12 @@ const Header = ({ setToggle, toggle, location }) => {
             </li>
           )}
 
-          {location === "/content" ? (
+          {location === "/content" || location === "/subject" ? (
             ""
           ) : (
             <li>
               <a
-                href="#all-department"
+                href="#why-eduwise-container"
                 onClick={() => {
                   setToggle(!toggle);
                   // window.scrollTo(0, 1000);
@@ -80,11 +92,11 @@ const Header = ({ setToggle, toggle, location }) => {
               </a>
             </li>
           )}
-          {location === "/content" ? (
+          {location === "/content" || location === "/subject" ? (
             ""
           ) : (
             <li>
-              <a href="#">About Us</a>
+              <a href="#about-us-container">About Us</a>
             </li>
           )}
         </ul>

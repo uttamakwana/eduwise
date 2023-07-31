@@ -5,7 +5,7 @@ import images from "../../constants/images.js";
 const WhyEduWise = () => {
   return (
     // Why EduWise component
-    <div className="why-eduwise-container">
+    <div className="why-eduwise-container" id="why-eduwise-container">
       <h2 className="why-eduwise-heading">
         Why <span> EduWise?</span>
       </h2>
